@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/* menu */
+nav {
+    width: 100%;
+    background-color: #353b48;
+    /* position: fixed; */
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+}
+
+nav > .menu > li > a {
+    text-transform: uppercase;
+}
+
+nav .menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    /* z-index: 1; */
+}
+
+nav .menu-nav li:hover a,
+nav > .menu > li:hover > a {
+    color: #fff;
+    background-color: black;
+    transition: all 0.3s;
+}
+
+nav .nav-arrow-down {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Menu Item */
+nav .menu-nav {
+    min-width: 150px;
+    position: absolute;
+    top: 100%;
+    left: 350px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    background-color: #fff;
+    display: none;
+}
+
+nav li:hover .menu-nav {
+    display: block;
+}
+
+nav .menu-nav li a {
+    color: #000;
+    padding-left: 10px;
+}
+
+.toggle {
+    display: none;
+    background-color: #353b48;
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-btn {
+    float: right;
+    color: #fff;
+    margin-top: -43px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.search-btn:hover {
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+/* my blog */
+.my-blog h1 {
+    padding: 50px 50px 0px 50px;
+    text-align: center;
+}
+
+.my-blog p {
+    padding: 30px 30px 0px 30px;
+    text-align: center;
+}
+
+.w3-tag {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* blog */
+.box {
+    background-color: #fff;
+    width: 895px;
+    margin: 45px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.mota {
+    padding: 15px;
+}
+
+.mota h5 {
+    padding-top: 15px;
+    font-weight: normal;
+}
+
+.mota .w3-opacity {
+    opacity: 0.6;
+}
+
+.mota .para-1 {
+    text-align: justify;
+}
+
+.mota .read {
+    padding-top: 15px;
+}
+
+.mota .read button {
+    padding: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.mota .read button:hover {
+    background-color: #ccc;
+}
+
+.mota .number {
+    float: right;
+    margin-top: -30px;
+}
+
+/* my-blog */
+.my-box {
+    background-color: #fff;
+    width: 400px;
+    margin: 45px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    float: right;
+    margin-top: -88%;
+    margin-right: 70px;
+}
+
+.mota-my {
+    padding: 15px;
+}
+
+.mota-my h5 {
+    padding-top: 15px;
+    font-weight: normal;
+}
+
+.mota-my .my-opacity {
+    opacity: 0.6;
+}
+
+.mota-my .para-2 {
+    text-align: justify;
+}
+
+.work-shop {
+    background-color: #fff;
+    width: 400px;
+    margin: 45px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    float: right;
+    margin-top: -52%;
+    margin-right: 70px;
+}
+
+.work-shop .post {
+    padding: 15px;
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+
+.post h4 {
+    font-weight: lighter;
+}
+
+.post-link {
+    list-style-type: none;
+}
+
+.post-link .post-sub {
+    padding: 16px;
+}
+
+.post-link .post-sub:hover {
+    background-color: #ccc;
+}
+
+.post-link .lorem {
+    margin-top: -59px;
+    font-size: 20px;
+    margin-left: 65px;
+}
+
+.post-link .sed-matic {
+    margin-left: 65px;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+.tag {
+    background-color: #fff;
+    width: 400px;
+    margin: 45px;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    float: right;
+    margin-top: -22.5%;
+    margin-right: 70px;
+}
+
+.tag .tag-hd {
+    padding: 15px;
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+
+.tag-hd h4 {
+    font-weight: lighter;
+}
+
+.tags-sub {
+    padding: 15px;
+}
+
+.tags-sub .tag-black {
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+}
+
+.tags-sub .tag-white {
+    font-size: 12px;
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+/* footer */
+.end {
+    padding: 15px;
+}
+
+.end .previous {
+    color: #fff;
+    background-color: #000;
+    padding: 15px;
+    cursor: not-allowed;
+    opacity: 0.4;
+    margin-top: 20px;
+}
+
+.end .previous:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.end .footer-next {
+    text-decoration: none;
+    color: #fff;
+}
+
+.end .next {
+    color: #fff;
+    background-color: #000;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.end .next:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.end p, .fb {
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.end .fb:hover {
+    color: brown;
+}
+
+/* Gioi thieu */
+/* background-image */
+.banthan-gioithieu .name-gioithieu {
+    text-align: center;
+    margin-top: -120%;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.banthan-gioithieu .cap-gioithieu {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Click now */
+.click-now-gioithieu .click-now-btn-gioithieu {
+    font-weight: 600;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin-top: 40px;
+    margin-left: 45%;
+}
+
+.click-now-gioithieu .click-now-btn-gioithieu:hover {
+    background-color: rgba(204, 204, 204, 0.5);
+    color: #000;
+}
+
+/* Contact */
+/* background-image */
+.banthan-lienhe .name-lienhe {
+    text-align: center;
+    margin-top: -66%;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.banthan-lienhe .cap-lienhe {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Click now */
+.click-now-lienhe .click-now-btn-lienhe {
+    font-weight: 600;
+    padding: 15px 35px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin-top: 40px;
+    margin-left: 45%;
+}
+
+.click-now-lienhe .click-now-btn-lienhe:hover {
+    background-color: rgba(204, 204, 204, 0.5);
+    color: #000;
+}
+
+/* CONTACT */
+.mobile-contact {
+    line-height: 1.8;
+}
+
+.h1-ct {
+    color: #000;
+    text-align: center;
+    margin-top: 60%;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
+.fan-ct {
+    color: #000;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    opacity: 0.6;
+}
+
+.pain-ct {
+    margin: 40px 24%;
+}
+
+/* form */
+.et {
+    margin-top: -87px;
+    float: right;
+}
+
+.et #email-name {
+    padding: 8px;
+}
+
+.submit {
+    padding: 8px 11px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 82%;
+}
+
+.submit:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.end-pain {
+    filter: grayscale(50%);
+    width: 102%;
+    margin-left: -30px;
+    margin-top: 10%;
+}
+
+/* Introduce */
+.image-introduce {
+    width: 250px;
+    margin: 110em 15em;
+}
+
+.thongtin {
+    position: absolute;
+    top: 271%;
+    right: 45%;
+    line-height: 2.2;
+}
+
+.thongtin .ten {
+    font-weight: 900;
+}
+
+.thongtin .mota-introduce {
+    opacity: 0.5;
+}
+
+.caption-introduce {
+    width: 69%;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    position: absolute;
+    top: 316%;
+    left: 15%;
+    background-color: #fff;
+}
+
+.hello {
+    opacity: 0.3;
+}
+
+.nguvan, .hello {
+    text-align: justify;
+    padding: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.introduce-end {
+    position: absolute;
+    top: 350%;
+    filter: grayscale(50%);
+}
+
+
+/* Viewport */
+@media screen and (max-width: 768px){
+    .menu {
+        flex-direction: column;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .box {
+        width: 94.6666%;
+        margin-left: 10px;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .my-box {
+        width: 94.6666%;
+        margin-right: 11px;
+        margin-top: 1px;
+    }
+
+    .work-shop {
+        width: 94.6666%;
+        margin-right: 11px;
+        margin-top: 1px;
+    }
+
+    .tag {
+        width: 94.6666%;
+        margin-right: 11px;
+        margin-top: 1px;
+    }
+
+    .banthan-gioithieu {
+        margin-top: 25px;
+    }
+
+    .click-now-gioithieu {
+        margin-top: -25px;
+        margin-right: 125px;
+    }
+
+    .banthan-lienhe {
+        margin-top: 25px;
+    }
+
+    .click-now-lienhe {
+        margin-top: -25px;
+        margin-right: 125px;
+    }
+
+    .mobile-contact {
+        margin-top: -150px;
+    }
+
+    .pain-ct {
+        margin-left: 12px;
+    }
+
+    .pain-ct-2 {
+        margin-left: 2px;
+    }
+
+    .form-pain {
+        margin-top: 96px;
+    }
+
+    #email-name {
+        width: 130%;
+    }
+
+    .submit {
+        margin-left: 109%;
+    }
+
+    .end-pain {
+        margin-top: 55%;
+        margin-left: -2%;
+    }
+
+    .image-introduce {
+        margin: 19em 3px;
+        width: 139px;
+    }
+
+    .thongtin {
+        font-size: 12px;
+        position: absolute;
+        top: 80%;
+        right: 8px;
+        line-height: 1.7;
+    }
+
+    .caption-introduce {
+        position: absolute;
+        top: 54em;
+        left: 3px;
+        width: 98%;
+    }
+
+    .introduce-end {
+        position: absolute;
+        top: 154%;
+    }
+
+    .search-btn {
+        margin: -52% 9%;
+    }
+
+    .menu-nav {
+        margin-left: -84%;
+    }
+}
+

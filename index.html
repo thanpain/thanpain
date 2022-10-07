@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./image-icon/themify-icons/themify-icons.css">
+    <link rel="icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/300670911_751872229237951_4838201610158513120_n.png?stp=dst-png_p206x206&amp;_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=aee45a&amp;_nc_ohc=oeHlbjxPeYAAX9YqApR&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AVK_Of36IuJBLbA6iy1O4nXpI_Fgc1_JvQmQLypSA0gYEQ&amp;oe=6344E8A9" type="image/icon">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('nav').slideToggle();
+            });
+        })
+    </script>
+
+    <div class="wrapper">
+        <!-- menu -->
+        <div class="header">
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="./lienhe.html">Liên hệ</a></li>
+                    <li>
+                        <a href="#myblog">
+                            Blog
+                            <i class="nav-arrow-down ti-angle-down"></i>
+                        </a>
+                        <ul class="menu-nav">
+                            <li><a href="#khampha">Khám Phá</a></li>
+                            <li><a href="#dulichbui">Du lịch Bụi</a></li>
+                            <li><a href="#billbalo">Bill Balo</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search-btn">
+                    <i class="fa fa-search"></i>
+                </div>
+            </nav>
+        </div>
+
+        <!-- my blog -->
+        <div class="content">
+            <header class="my-blog"> 
+                <h1>WELCOME MY BLOG</h1>
+                <p>Chào mừng đến với Blog của  <span class="w3-tag">Nguyễn Hoàng Duy Nhất</span></p>
+            </header>
+        </div>
+
+        <!-- blog -->
+        <div class="blog">
+            <div class="box">
+                <img src="https://raw.githubusercontent.com/nhatpain/blog-my/8aed8f9e30825e90344330a7ac077291124aa9c8/hinh-1.jpg" alt="Nature" style="width:100%">
+                <div class="wrapper-mota">
+                    <div class="mota">
+                        <h3><b>ĐI THEO BÓNG MẶT TRỜI</b></h3>
+                        <h5>Ánh mặt trời, <span class="w3-opacity">Ngày 9 tháng 8 năm 2022</span></h5>
+                    </div>
+                    <div class="mota">
+                        <p class="para-1">Hạ lần nữa lại buông mình trên những ngọn phố trầm tư, nắng cũng đã trải dài trên những ngả đường, những hàng 
+                            bằng lăng tím ngắt. Ta ngồi đây lắng nghe tháng sáu ùa về, nhẹ nhàng và bất chợt.</p>
+                        <div class="read">
+                            <button onclick="docThem()"><b>ĐỌC THÊM »</b></button>
+                        </div>
+                        <div class="number">
+                            <p><span><b>Bình luận  </b> <span>0</span></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="./img/hinh-3.jpg" alt="Nature" style="width:100%">
+                <div class="wrapper-mota">
+                    <div class="mota">
+                        <h3><b>VŨ TRỤ TRONG CHÚNG TA</b></h3>
+                        <h5>Vũ trụ, <span class="w3-opacity">Ngày 10 tháng 8 năm 2022</span></h5>
+                    </div>
+                    <div class="mota">
+                        <p class="para-1">Nếu vũ trụ là sự vận động, nó sẽ không chỉ theo một hướng. Chúng ta nghĩ cuộc đời của mình là 
+                            đường thẳng, nhưng chính vòng quay của trái đất khiến chúng ta quan sát được thời gian.</p>
+                        <div class="read">
+                            <button onclick="docThem()"><b>ĐỌC THÊM »</b></button>
+                        </div>
+                        <div class="number">
+                            <p><span><b>Bình luận  </b> <span>3</span></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-box">
+                <img src="./img/hinh-4.jpg" alt="Nature" style="width:100%">
+                <div class="box-mota">
+                    <div class="mota-my">
+                        <h3><b>MY NAME</b></h3>
+                        <h5>Da Nang, <span class="my-opacity">Ngày 13 tháng 11 năm 2022</span></h5>
+                    </div>
+                    <div class="mota-my">
+                        <p class="para-2">Chỉ tôi, tôi và bạn, khám phá vũ trụ vô định. Tôi có một trái tim yêu và quan tâm đến blog 
+                            cho mọi người và bản thân tôi. Tôi muốn chia sẻ thế giới của tôi với bạn.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-shop">
+                <div class="post">
+                    <h4>Bài Viết Phổ Biến</h4>
+                </div>
+                <ul class="post-link">
+                    <li class="post-sub">
+                        <img src="./img/workshop-1.jpg" alt="Image" style="width: 50px">
+                        <p class="lorem">Lorem</p>
+                        <p class="sed-matic">Sed mattis nunc</p>
+                    </li>
+                    <hr>
+                    <li class="post-sub">
+                        <img src="./img/workshop-2.jpg" alt="Image" style="width: 50px;">
+                        <p class="lorem">lpsum</p>
+                        <p class="sed-matic">Praes tinci sed</p>
+                    </li>
+                    <hr>
+                    <li class="post-sub">
+                        <img src="./img/workshop-3.jpg" alt="Image" style="width: 50px;">
+                        <p class="lorem">Dorum</p>
+                        <p class="sed-matic">Ultricies congue</p>
+                    </li>
+                    <hr>
+                    <li class="post-sub">
+                        <img src="./img/workshop-4.jpg" alt="Image" style="width: 50px;">
+                        <p class="lorem">Mingsum</p>
+                        <p class="sed-matic">Lorem ipsum dipsum</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tag">
+                <div class="tag-hd">
+                    <h4>Tags</h4>
+                </div>
+                <div class="tags-sub">
+                    <p>
+                        <span class="tag-black margin-bottom">Travel</span>
+                        <span class="tag-white margin-bottom">New York</span>
+                        <span class="tag-white margin-bottom">London</span>
+                        <span class="tag-white margin-bottom">IKEA</span>
+                        <span class="tag-white margin-bottom">NORWAY</span>
+                        <span class="tag-white margin-bottom">DIY</span>
+                        <span class="tag-white margin-bottom">Ideas</span>
+                        <span class="tag-white margin-bottom">Baby</span>
+                        <span class="tag-white margin-bottom">Family</span>
+                        <span class="tag-white margin-bottom">News</span>
+                        <span class="tag-white margin-bottom">Clothing</span>
+                        <span class="tag-white margin-bottom">Shopping</span>
+                        <span class="tag-white margin-bottom">Sports</span>
+                        <span class="tag-white margin-bottom">Games</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr style="opacity: 1">
+        <footer class="end">
+                <button class="previous">Previous</button>
+                <button class="next"><a class="footer-next" href="./lienhe.html">Next »</a></button>
+                <p>
+                    Powered by 
+                    <a href="https://www.facebook.com/duy.nhat.1311/" target="_blank" class="fb">Nguyễn Hoàng Duy Nhất</a>
+                </p>
+        </footer>
+    </div>
+    
+</body>
+</html>
