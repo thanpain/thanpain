@@ -376,6 +376,11 @@ hr {
     text-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
+.end-intro-pain {
+    filter: grayscale(50%);
+    margin-top: 10%;
+}
+
 /* Contact */
 /* background-image */
 .banthan-lienhe .name-lienhe {
@@ -564,6 +569,11 @@ hr {
 
     .end-pain {
         margin-top: 55%;
+        margin-left: -2%;
+    }
+    
+    .end-intro-pain {
+        margin-top: 10%;
         margin-left: -2%;
     }
 
