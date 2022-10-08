@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./image-icon/themify-icons/themify-icons.css">
     <link rel="icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/300670911_751872229237951_4838201610158513120_n.png?stp=dst-png_p206x206&amp;_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=aee45a&amp;_nc_ohc=oeHlbjxPeYAAX9YqApR&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AVK_Of36IuJBLbA6iy1O4nXpI_Fgc1_JvQmQLypSA0gYEQ&amp;oe=6344E8A9" type="image/icon">
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
     <script>
@@ -51,7 +52,7 @@
 
         <div class="background-image">
             <div class="image-nhat">
-                <img src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.15752-9/287192213_5769576273067095_1734154704736944984_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=ae9488&_nc_ohc=hJv5io0YbnoAX9CBEnI&_nc_ht=scontent.fsgn2-3.fna&oh=03_AVJt9_AW3ss4jtSQk-o14IK7u5Dc8nbnPGuofgeIi-ZsZg&oe=63493D46" alt="" style="width: 100%">
+                <img src="./img/image-1.png" alt="" style="width: 100%">
             </div>
             <div class="banthan-gioithieu">
                 <p class="name-gioithieu">MY NAME <br> NGUYỄN HOÀNG DUY NHẤT</p>
@@ -59,39 +60,53 @@
                     audacter sua decreta defendere.</i></p>
             </div>
             <div class="click-now-gioithieu">
-                <input type="button" value="CLICK NOW" class="click-now-btn-gioithieu">
+                <input type="button" value="CLICK NOW" class="click-now-btn-gioithieu" onclick="clickLienHe()">
             </div>
         </div>
-
+        
         <div class="introduce">
             <div class="image-introduce">
-                <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.15752-9/304880947_399011045714227_9076334915161555629_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Me0cn62vorcAX-RCDo1&tn=2qchYnTM0WrcBwbK&_nc_ht=scontent.fhan2-1.fna&oh=03_AVJsup9Vtn9q67yReC8C5YuKkIr20-0qZaJmNXjMc7SOBQ&oe=635658D1" alt="" style="width:100%">
+                <img class="me-intro" src="./img/me-1.png" alt="">
             </div>
             <div class="thongtin">
-                <h3 class="ten">MY INTRODUCE</h3>
-                <p class="mota-introduce"><i>Lập trình viên Frontend, Thiết kế Website, Coder</i></p>
+                <div class="pain-my-intro">
+                    <h2 class="my-introduce">MY INTRODUCE</h2>
+                </div>
+                <div class="pain-mota-intro">
+                    <p class="mota-introduce">Lập trình viên Frontend, Thiết kế Website, Coder</p>
+                </div>
                 <br>
-                <p class="ten-introduce"><strong>NAME: </strong>Nguyễn Hoàng Duy Nhất</p>
-                <p class="birthday"><strong>BIRTHDAY: </strong>13/11/2002</p>
-                <p class="address-introduce"><strong>ADDRESS: </strong>Da Nang, VN</p>
-                <p class="phone-introduce"><strong>PHONE: </strong>0839445657</p>
-                <p class="email-introduce"><strong>EMAIL: </strong>duynhat2471@gmail.com</p>
-                <p class="website-introduce"><strong>WEBSITE: </strong>nhatpain.github.io/blog-my</p>
-            </div>
-
-            <div class="caption-introduce">
-                <h1 class="hello">Hello!</h1>
-                <p class="nguvan">Tôi xin ra lớn lên tại Đắk Lắk. Hiện tại tôi là sinh viên, nghề nghiệp tương lai của tôi là trở thành
-                     một lập trình viên thật sự giỏi để có thể phục vụ xã hội. Tôi luôn có niềm vui mỗi khi code và luôn dành thời gian
-                     để tìm hiểu về những công nghệ mới và kiến thức lập trình mới để hoàn thiện các sản phẩm Website một cách tốt nhất
-                    để có thể phục vụ khách hàng và xã hội.
-                </p>
+                <div class="pain-ten-intro">
+                    <p class="ten-introduce"><strong class="name-introduce">NAME: </strong>Nguyễn Hoàng Duy Nhất</p>
+                </div>
+                <div class="pain-bd-intro">
+                    <p class="birthday-introduce"><strong class="bd-introduce">BIRTHDAY: </strong>13/11/2002</p>
+                </div>
+                <div class="pain-adr-intro">
+                    <p class="address-introduce"><strong class="adr-introduce">ADDRESS: </strong>Da Nang, VN</p>
+                </div>
+                <div class="pain-ph-intro">
+                    <p class="phone-introduce"><strong class="ph-introduce">PHONE: </strong>0839445657</p>
+                </div>
+                <div class="pain-em-intro">
+                    <p class="email-introduce"><strong class="em-introduce">EMAIL: </strong>duynhat2471@gmail.com</p>
+                </div>
+                <div class="pain-wb-intro">
+                    <p class="website-introduce"><strong class="wb-introduce">WEBSITE: </strong>thanpain.github.io/thanpain</p>
+                </div>
             </div>
         </div>
 
-        <div class="introduce-end">
-            <img src="https://www.w3schools.com/w3images/map.jpg" alt="" style="width: 100%;">
+        <div class="end-intro-pain end-pain">
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="" style="width: 100%; margin-top: -8%;">
         </div>
+
+        <footer class="end">
+            <p>
+                Powered by 
+                <a href="https://www.facebook.com/duy.nhat.1311/" target="_blank" class="fb">Nguyễn Hoàng Duy Nhất</a>
+            </p>
+        </footer>
     </div>
 </body>
 </html>
