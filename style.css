@@ -12,6 +12,7 @@ html {
     background-color: whitesmoke;
 }
 
+/* Trang chủ */
 .header {
     position: fixed;
     top: 0;
@@ -172,7 +173,7 @@ nav .menu-nav li a {
     margin: 45px;
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
     float: right;
-    margin-top: -86.5%;
+    margin-top: -88%;
     margin-right: 70px;
 }
 
@@ -321,12 +322,13 @@ hr {
 .end .fb:hover {
     color: brown;
 }
+/* End trang chủ */
 
 /* Gioi thieu */
 /* background-image */
 .banthan-gioithieu .name-gioithieu {
     text-align: center;
-    margin-top: -120%;
+    margin-top: -83%;
     color: #fff;
     font-size: 27px;
     font-weight: 700;
@@ -353,6 +355,25 @@ hr {
 .click-now-gioithieu .click-now-btn-gioithieu:hover {
     background-color: rgba(204, 204, 204, 0.5);
     color: #000;
+}
+
+.introduce .image-introduce .me-intro {
+    width: 414px;
+    margin-top: 72%;
+    margin-left: 24%;
+}
+
+.thongtin {
+    float: right;
+    margin-top: -35%;
+    margin-right: 25%;
+    line-height: 40px;
+}
+
+.thongtin .pain-mota-intro .mota-introduce{
+    font-style: italic;
+    opacity: 0.5;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 /* Contact */
@@ -444,54 +465,6 @@ hr {
     margin-top: 10%;
 }
 
-/* Introduce */
-.image-introduce {
-    width: 250px;
-    margin: 110em 15em;
-}
-
-.thongtin {
-    position: absolute;
-    top: 271%;
-    right: 45%;
-    line-height: 2.2;
-}
-
-.thongtin .ten {
-    font-weight: 900;
-}
-
-.thongtin .mota-introduce {
-    opacity: 0.5;
-}
-
-.caption-introduce {
-    width: 69%;
-    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
-    position: absolute;
-    top: 316%;
-    left: 15%;
-    background-color: #fff;
-}
-
-.hello {
-    opacity: 0.3;
-}
-
-.nguvan, .hello {
-    text-align: justify;
-    padding: 15px;
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-
-.introduce-end {
-    position: absolute;
-    top: 350%;
-    filter: grayscale(50%);
-}
-
-
 /* Viewport */
 @media screen and (max-width: 768px){
     .menu {
@@ -542,6 +515,20 @@ hr {
         margin-right: 125px;
     }
 
+    .image-introduce {
+        width: 0%;
+        margin-top: 95px;
+    }
+
+    .thongtin {
+        position: absolute;
+        top: 84%;
+        left: 50px;
+        line-height: 35px;
+        color: #fff;
+        right: -65px;
+    }
+
     .banthan-lienhe {
         margin-top: 25px;
     }
@@ -575,34 +562,10 @@ hr {
         margin-left: 109%;
     }
 
-    .end-pain {
+    .end-pain, .end-intro-pain {
         margin-top: 55%;
         margin-left: -2%;
-    }
-
-    .image-introduce {
-        margin: 19em 3px;
-        width: 139px;
-    }
-
-    .thongtin {
-        font-size: 12px;
-        position: absolute;
-        top: 80%;
-        right: 8px;
-        line-height: 1.7;
-    }
-
-    .caption-introduce {
-        position: absolute;
-        top: 54em;
-        left: 3px;
-        width: 98%;
-    }
-
-    .introduce-end {
-        position: absolute;
-        top: 154%;
+        margin-top: 10%;
     }
 
     .search-btn {
@@ -611,7 +574,6 @@ hr {
 
     .menu-nav {
         margin-left: -84%;
-        width: 98%
+        width: 98%;
     }
 }
-
