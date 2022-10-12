@@ -460,6 +460,7 @@ hr {
     color: #fff;
     cursor: pointer;
     margin-left: 82%;
+    border: none;
 }
 
 .submit:hover {
