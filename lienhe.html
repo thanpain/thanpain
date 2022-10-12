@@ -90,24 +90,24 @@
                         </div>
                     </div>
                     <div class="form-pain">
-                        <form action="" class="et">
+                        <form action="process-action.html" class="et" onsubmit = "return validateForm()">
                             <table>
                                 <tr>
                                     <td>
-                                        <input type="text" name="" id="email-name" placeholder="Name">
-                                        <input type="text" name="" id="email-name" placeholder="Email">
+                                        <input type="text" name="" id="email-name" placeholder="Name" required>
+                                        <input type="text" name="" id="email-name" placeholder="Email" required>
                                     </td>
                                 </tr>
     
                                 <tr>
                                     <td>
-                                        <input type="text" name="" id="email-name" placeholder="Message">
+                                        <input type="text" name="" id="email-name" placeholder="Message" required>
                                     </td>
                                 </tr>
     
                                 <tr>
                                     <td>
-                                        <input type="button" value="Send" class="submit">
+                                        <button type="submit" class="submit">Send</button>
                                     </td>
                                 </tr>
                             </table>
