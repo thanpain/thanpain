@@ -12,13 +12,22 @@ html {
     background-color: whitesmoke;
 }
 
+/* Logo */
+.logo {
+    width: 50px;
+    position: absolute;
+    z-index: 999;
+    top: 4px;
+    left: 10px;
+}
+
 /* Trang chủ */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    /* z-index: 999; */
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
 }
 
@@ -31,6 +40,10 @@ nav {
 
 ul {
     list-style-type: none;
+}
+
+.menu, .menu-nav {
+    margin-left: 5%;
 }
 
 .menu {
@@ -513,6 +526,10 @@ hr {
 
 /* Viewport */
 @media screen and (max-width: 768px){
+    .logo {
+        margin-top: 3px;
+    }
+    
     .menu {
         flex-direction: column;
     }
