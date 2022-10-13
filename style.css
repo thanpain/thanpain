@@ -618,8 +618,9 @@ hr {
         margin-left: -2%;
     }
 
-    .search-btn {
-        margin: -52% 9%;
+    .search-box {
+        margin-right: 40px;
+        margin-top: 5px;
     }
 
     .menu-nav {
