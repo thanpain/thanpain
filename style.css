@@ -532,6 +532,7 @@ hr {
     
     .menu {
         flex-direction: column;
+        margin-left: 0px;
     }
 
     .toggle {
