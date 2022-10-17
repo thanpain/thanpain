@@ -524,6 +524,196 @@ hr {
     margin-top: 10%;
 }
 
+/* Blog */
+#content-1 {
+    position: relative;
+    letter-spacing: 4px;
+}
+#content-1 .image-content {
+    margin-top: 42px;
+}
+
+#content-1 .dog-new {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(2%, -50%);
+}
+
+#content-1 .dog-new .dog-carettaker, .new-foundland {
+    color: white;
+    text-transform: uppercase;
+}
+
+#content-1 .dog-new .dog-carettaker {
+    font-weight: 500;
+}
+
+#content-1 .dog-new .new-foundland {
+    font-size: 63px;
+}
+
+#content-1 .dog-new .book-now {
+    background-color: #ffdddd;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#content-1 .dog-new .book-now a {
+    color: black;
+    text-transform: uppercase;
+}
+
+#content-1 .dog-new .book-now:hover {
+    background-color: darkgrey;
+}
+
+#content-2 {
+    margin-top: 60px;
+}
+
+#content-2 .trainers .trainers-title, .mota-happy-paws {
+    text-align: center;
+}
+
+#content-2 .trainers .trainers-title {
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#content-2 .trainers .para-3 {
+    text-align: justify;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content-2 .trainers .mota-happy-paws {
+    margin-top: 20px;
+    opacity: 0.5;
+}
+
+#content-3 .text-align-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#content-3 .text-align-content .book-now-content {
+    max-width: 474px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    float: left;
+    margin: 0 8px;
+}
+
+#content-3 .text-align-content h3 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#content-3 .text-align-content .nhat {
+    font-size: 13px;
+    opacity: 0.5;
+    margin: 15px 0;
+}
+
+#content-3 .text-align-content .input-button a {
+    color: #000;
+}
+
+#content-3 .text-align-content .input-button {
+    margin: 10px 0;
+    padding: 8px 16px;
+    width: 100%;
+    background-color: #ffdddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#content-3 .text-align-content .input-button:hover {
+    background-color: darkgrey;
+}
+
+#content-3 .text-align-content .mota-content {
+    padding: 10px 15px;
+}
+
+#content-5 .activities-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#content-5 .activities-content .dog-activities {
+    max-width: 474px;
+    float: left;
+    margin: 0 8px;
+}
+
+#content-5 .activities-content .dog-activities .img-content-5:hover {
+    opacity: 0.5;
+}
+
+#content-5 .activities-content .mota-content-5 {
+    padding: 10px 15px;
+}
+
+#content-5 .activities-content .para-pain {
+    margin: 15px 0;
+}
+
+#content-5 .activities-content .dog-walking {
+    font-weight: bold;
+}
+
+#content-5 .activities-content .input-button-5 {
+    padding: 8px 16px;
+    background-color: #ffdddd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#content-5 .activities-content .input-button-5:hover {
+    background-color: darkgrey;
+}
+
+#content-5 .activities-content .input-button-5 a {
+    color: #000;
+    text-decoration: none;
+}
+
+#content-6 .message .message-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#content-6 .message #name-contact, #service-contact, #lich-contact, #message-contact {
+    padding: 15px 5px;
+    margin-bottom: 15px;
+}
+
+#content-6 .message .send-message {
+    width: 100%;
+    background-color: #ffdddd;
+    margin-bottom: 60px;
+    padding: 8px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#content-6 .message .send-message:hover {
+    background-color: darkgrey;
+}
+
 /* Viewport */
 @media screen and (max-width: 768px){
     .logo {
@@ -644,5 +834,36 @@ hr {
     .menu-nav {
         margin-left: -84%;
         width: 98%;
+    }
+    
+    #content-1 {
+        width: 94%;
+        margin: 8px 12px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #content-1 .dog-new .new-foundland {
+        display: none;
+    }
+
+    #content-1 .dog-new .dog-carettaker {
+        width: 0px;
+        margin-left: 5px;
+    }
+
+    #content-1 .dog-new .book-now {
+        margin: 3px 5px;
+    }
+
+    #content-5 .activities-content,
+    #content-3 .text-align-content {
+        flex-direction: column;
+    }
+
+    #content-5 .activities-content .dog-activities,
+    #content-3 .text-align-content .book-now-content {
+        margin-bottom: 16px;
     }
 }
